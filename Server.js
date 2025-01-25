@@ -3,6 +3,10 @@ const app = express()
 const PORT = process.env.PORT || 5000
 
 
+app.get("/profile",(req,res)=>{
+    res.send("This is a Profile page!")
+})
+
 app.get('/',(req,res)=>{
     res.send("Hello This is Git Testing Project!")
 })
